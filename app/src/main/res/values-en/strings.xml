@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome">Welcome in Dieti Estates 25</string>
+    <string name="search_title">Search for a property here</string>
+    <string name="search_empty_list_error">No properties found in the search</string>
+    <string name="advanced_search">Advanced Search</string>
+    <string name="filters_title">Filters</string>
+    <string name="adv_subtitle">Filter properties based on your needs</string>
+    <string name="empty_filter">Empty filter</string>
+    <string name="show_results_btn">Show results</string>
+    <string name="listing_type">Listing Type</string>
+    <string name="price_chosen_editTxt">Price chosen by you</string>
+    <string name="position_filter">Position</string>
+    <string name="chosen_filter_editTxt">Municipality or City</string>
+    <string name="insert_here">Insert here</string>
+    <string name="radius">Radius</string>
+    <string name="search_radius">Search Radius</string>
+    <string name="intMapTitle">Interactive Map</string>
+    <string name="your_position">Your position is here</string>
+    <string name="use_accurate_location">Use precise location</string>
+    <string name="err_permission_location_denied">Unable to get current location. Make sure you have granted the necessary location permissions</string>
+    <string name="marker_curr_pos_err">Precise location message not available</string>
+
+    <string name="not_implemented">The feature is currently unavailable.</string>
+    <string name="not_implemented_login_api">"Login via %s is currently not available."</string>
+    <string name="not_implemented_pwd_recovery">"Password recovery via email \n%s\nis currently not available."</string>
+
+    <!-- Advanced Search -->
+    <string name="err_validation_advanced_search">You must set either a single search criterion or all of them before starting the advanced search.</string>
+
+    <!-- Navigation View -->
+    <string name="home">Home</string>
+    <string name="menu">Menu</string>
+    <string name="profile">Profile</string>
+    <string name="loginBtn">LOGIN</string>
+    <string name="editTextEmailUsername">E-mail or Username</string>
+    <string name="regUsrBtn">No account? Register</string>
+    <string name="here">here</string>
+    <string name="pwdRecovery">Forgot password?</string>
+    <string name="hint_pwd_dialog">Account e-mail</string>
+    <string name="btnSend">Send</string>
+    <string name="input_email_error">E-mail field cannot be empty</string>
+    <string name="email_error">Invalid e-mail</string>
+    <string name="infoUsrLogin">Or</string>
+    <string name="settings">Settings</string>
+
+    <!-- Real Estate Ads -->
+    <string name="offer_title">Offer</string>
+    <string name="offer_cancel_btn">CANCEL OFFER</string>
+    <string name="offer_hint">Make an offer</string>
+    <string name="make_counteroffer">Make a counteroffer</string>
+    <string name="click_here">Click here</string>
+    <string name="insert_offer">Insert offer</string>
+    <string name="insert_note">Insert note</string>
+    <string name="input_offer_error">Offer field cannot be empty</string>
+    <string name="empty_list">No real estate\nlistings available</string>
+    <!-- Fields -->
+    <string name="last_updated_label">Last updated:</string>
+    <string name="region">Region</string>
+    <string name="state">State</string>
+    <string name="desc">Description</string>
+    <string name="show_all_btn">Show all</string>
+    <string name="characts">Characteristics</string>
+    <string name="price">Price</string>
+    <string name="price_range">0 EUR - 100000 EUR</string>
+    <string name="dimensions">Dimensions</string>
+    <string name="address">Address</string>
+    <string name="rooms">Rooms</string>
+    <string name="info_rooms">Numbers of rooms:</string>
+    <string name="decrement_num_rooms">Increase number of rooms</string>
+    <string name="increment_num_rooms">Decrease number of rooms</string>
+    <string name="more_rooms">More than 10 rooms</string>
+    <string name="level">Level</string>
+    <string name="elevator_lift">Elevator/Lift</string>
+    <string name="energy_class">Energy class</string>
+    <string name="info_energy">Type of class:</string>
+    <string name="services">Services</string>
+    <string name="additional_info">Additional info</string>
+    <!-- Points of interest -->
+    <string name="near_schools">Near schools</string>
+    <string name="near_parks">Near parks</string>
+    <string name="near_public_transport">Near public transport</string>
+    <string name="no_poi_nearby">No points of interest nearby</string>
+
+    <!-- Fields values -->
+    <string name="state_value1">For rent</string>
+    <string name="state_value2">For sale</string>
+    <!-- Maps -->
+    <string name="show_map_error">Address not found</string>
+    <string name="nominatim_API_error">Nominatim API call error</string>
+    <string name="maps_network_error">Network error:</string>
+    <string name="position_property">Position property</string>
+
+    <!-- Sign-up -->
+    <string name="sign_up_title">Account Registration</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="rep_pwd">Retype password</string>
+    <string name="backBtnSignUp">Cancel</string>
+    <string name="nextBtnSignUp">Continue</string>
+    <string name="field_required">This field is required</string>
+    <string name="email_example">Example: abc@domain.com</string>
+    <string name="strong_pwd">Strong password</string>
+    <string name="pwd_too_long_label">Too long password</string>
+    <string name="too_short_pwd">Too short password</string>
+    <string name="field_check">At least 1</string>
+    <string name="field_check2">At least 2</string>
+    <string name="uppercase_check">uppercase letter</string>
+    <string name="lowercase_check">lowercase letter</string>
+    <string name="number_check">number</string>
+    <string name="special_character_check">special characters</string>
+    <string name="error_fields_validation">Error: please check that all fields are filled in-correctly.</string>
+    <string name="err_not_specified_role">Error: user role not specified.</string>
+    <string name="registration_title">Registration</string>
+    <string name="registration_success">Registration completed! Please login to continue.</string>
+    <string name="registration_error_generic">Registration error: %s</string>
+    <string name="error_finalize_validation">Fill in all required fields correctly</string>
+
+    <!-- Dashboards -->
+    <string name="logout_success_message">Logout successful</string>
+    <string name="logout_confirmation_title">Confirm Exit</string>
+    <string name="logout_confirmation_message">Are you sure you want to logout?</string>
+    <string name="available_serv">Available services</string>
+    <string name="add_settings">Additional settings</string>
+    <string name="desc_home">Return to home</string>
+    <string name="desc_account">Account management</string>
+
+    <string name="new_agency_m">New Agency Manager</string>
+    <string name="new_support_a">New Support Account</string>
+    <string name="show_hide_acc_list">Show/Hide account list</string>
+    <string name="adm_ass">Administrative Assistant</string>
+    <string name="tech_supp">Technical Support</string>
+    <string name="dev">Developer</string>
+    <string name="an">Analyst</string>
+    <string name="usr_man">User Management</string>
+    <string name="server_state">Server state</string>
+    <string name="pers_data">Personal Data</string>
+    <string name="change_def_pwd">Change Default Password</string>
+    <string name="change_pwd">Change Password</string>
+    <string name="new_real_estate_agent">New Real Estate Agent</string>
+    <string name="property_listing_create">Property listing create</string>
+    <string name="manage_offers">Manage offers</string>
+    <string name="add_offer">Add offer</string>
+    <string name="make_an_offer">Make an offer on a property</string>
+    <string name="tracking_offer_history">Tracking\n offer history</string>
+    <string name="tracking_counteroffer_history">Tracking\n counteroffer history</string>
+
+    <string name="step">Step</string>
+    <string name="of">di</string>
+    <string name="back_btn">Back</string>
+    <string name="next_btn">Next</string>
+    <string name="data_confirmation">Do you confirm the data entered?</string>
+
+    <!-- Retrofit -->
+    <string name="server_not_reachable">"Connection to server failed at address %s.\nWe apologize for any \ninconvenience caused.\nPlease try again later."</string>
+    <string name="server_not_reachable_for_user">"Connection to server failed.\nWe apologize for any\ninconvenience caused.\nPlease try again later."</string>
+    <string name="err_api_service_null">ApiService cannot be null</string>
+    <string name="err_empty_data_lists">Data lists to send cannot be empty</string>
+    <string name="retrofit_network_error">Network error</string>
+    <string name="error_empty_response">Response body is empty</string>
+    <string name="error_parsing_response">" (Failed to parse errorBody)"</string>
+    <string name="err_retrieving_agent_id">Error occurred while retrieving the Agent ID</string>
+
+    <!-- Internal error -->
+    <string name="domain_connection_denied">Domain connection is denied</string>
+    <!-- Server State -->
+    <string name="status">Status</string>
+    <string name="timezone">Timezone</string>
+    <string name="location">Location</string>
+    <string name="server_response">Server response</string>
+    <string name="response_format_err">Response format error</string>
+    <string name="msg_reading_err">Message reading error</string>
+
+    <!-- Listing create - Step1 -->
+    <string name="prop_listing_title">Listing create</string>
+    <string name="choose_photo">Choose property photo</string>
+    <string name="show_hide_photo">Show/Hide image selected</string>
+    <string name="no_photo">"No image selected. Please select an image for your ad."</string>
+    <string name="title">Title</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="field_value_required">Enter a valid number (integer or decimal)</string>
+    <string name="field_integer_required">Enter a integer</string>
+    <string name="all_fields_required">All fields are required</string>
+    <string name="is_already_present">is already present in the list of services</string>
+
+    <string name="validation_error_title_required">Title is required.</string>
+    <string name="validation_error_description_required">Description is required.</string>
+    <string name="validation_error_price_required">Price is required.</string>
+    <string name="validation_error_dimensions_required">Dimensions are required.</string>
+    <string name="validation_error_rooms_required">Number of rooms is required.</string>
+    <string name="validation_error_level_required">Floor/Level is required.</string>
+    <string name="validation_error_address_required">Address is required.</string>
+    <string name="validation_error_position_required">A position on the map is required.</string>
+
+    <!-- Service suggestions -->
+    <string name="concierge">Concierge</string>
+    <string name="air_cond">Air conditioning (A/C)</string>
+    <string name="parking">Parking</string>
+    <string name="pool">Swimming pool</string>
+    <string name="gym">Gym</string>
+    <string name="security">24/7 Security</string>
+    <string name="green_sp">Green space</string>
+    <string name="smart_home">Smart home system</string>
+    <string name="fiber_opt">Fiber optic internet</string>
+    <string name="panoramic_v">Panoramic view</string>
+    <string name="balcony_terr">Balcony/Terrace</string>
+    <string name="private_g">Private garden</string>
+    <string name="pets">Pets allowed</string>
+
+    <!-- Listing create - Step2 -->
+    <string name="step2_title">Classify new property</string>
+    <string name="sale">Sale</string>
+    <string name="rental">Rental</string>
+    <string name="short_stay">Short stay</string>
+    <string name="vacation_rental">Vacation rental</string>
+    <string name="only_one_choice">Only one choice is allowed!</string>
+    <string name="nothing_choice">No option selected</string>
+
+    <!-- Listing create - Step3 -->
+    <string name="step3_title">New property type</string>
+    <string name="studio">Studio apartment</string>
+    <string name="one_bedroom">One-bedroom apartment</string>
+    <string name="two_bedroom">Two-bedroom apartment</string>
+    <string name="apartment_flat">Apartment / Flat (GB)</string>
+    <string name="penthouse">Penthouse</string>
+    <string name="attic">Attic</string>
+    <string name="townhouse_th">Townhouse / Terraced-house (GB)</string>
+    <string name="farmhouse_ch">Farmhouse / Country house</string>
+
+    <!-- Listing create - Step4 -->
+    <string name="step4_title">Exact Geographic Location</string>
+    <string name="map_pin">Map PIN</string>
+    <string name="publish_ad">Publish Ad</string>
+
+    <!-- Img Upload Helper -->
+    <string name="upload_img_state_tag">Image upload status</string>
+    <string name="copy_img_file_failed">Failed to create temporary image file</string>
+    <string name="err_delete_tmp_file">Failed to delete temporary file</string>
+    <string name="err_delete_tmp_file_old_api">Cannot delete temporary file on this Android version</string>
+    <string name="upload_img_completed">Image upload completed</string>
+    <string name="upload_img_failure">Image upload failed</string>
+
+    <string name="property_ad_saved">Property ad saved</string>
+
+    <!-- Offer Management -->
+    <string name="acceptOff">Accept Offer</string>
+    <string name="rejectOff">Reject Offer</string>
+    <string name="accepted">Accepted</string>
+    <string name="rejected">Rejected</string>
+    <string name="counteroffer">Counteroffer</string>
+    <string name="client_id_label">Client ID:</string>
+    <string name="name_surname_label">Name Surname:</string>
+    <string name="property_id_label">Property ID:</string>
+    <string name="type_label">Type:</string>
+    <string name="offer_label">Offer:</string>
+    <string name="date_time_label">Date / Time:</string>
+    <string name="notes">Notes:</string>
+    <string name="offer_status_label">Offer Status:</string>
+    <string name="empty_offer_list">No offers received</string>
+
+    <string name="auto_delete_offers_title">Duration of managed offers</string>
+    <string name="auto_delete_offers_info_msg">Please note that all managed offers will still be available for modification for a maximum of 60 minutes.\n\nThe DietiEstates25 Support Team.</string>
+
+    <string name="dialogCounterofferTitle">Formulate counteroffer</string>
+    <string name="dialogCounterofferSubtitle">Enter the amount you want to propose to the client for the property.</string>
+    <string name="counteroffer_is_empty">Counteroffer is missing</string>
+    <string name="notes_hint">Add a note (optional)</string>
+    <string name="counteroffer_cancel_btn">CANCEL COUNTEROFFER</string>
+    <string name="counteroffer_send_btn">SEND COUNTEROFFER</string>
+    <string name="insert_amount">Insert amount</string>
+
+    <!-- Tracking -->
+    <string name="tracking_title">Offers Tracking</string>
+    <string name="search_client_tracking_hint">Search Clients</string>
+    <string name="filter_tooltip">Filters</string>
+    <string name="filter_sort_by_label">Sort by:</string>
+    <string name="filter_sort_by_client_id">Client ID</string>
+    <string name="filter_sort_by_name">Name</string>
+    <string name="filter_sort_by_surname">Surname</string>
+    <string name="filter_sort_by_date">Date</string>
+    <string name="filter_sort_direction_label">Direction:</string>
+    <string name="ascending_sort_indicator">Increasing</string>
+    <string name="descending_sort_indicator">Decreasing</string>
+    <string name="filters_apply_btn_txt">APPLY</string>
+    <string name="label_property_id">PROPERTY ID</string>
+    <string name="label_action_date_time">Data/Time</string>
+    <string name="label_offer_price">Offer Price</string>
+    <string name="label_final_status">Final Status</string>
+    <string name="no_tracked_offers_msg">NO OFFERS IN HISTORY</string>
+    <string name="tracker_question">Show the offer history for customer</string>
+    <string name="error_loading_repository">"Error loading repository: "</string>
+
+    <string name="action_save">Save</string>
+    <string name="action_print">Print</string>
+    <string name="action_delete">Delete</string>
+
+    <string name="select_offer_to_save">Select an offer to save/export.</string>
+    <string name="printing_offer">Print offer:</string>
+    <string name="to_be_implement_suffix"> (to be implemented)</string>
+    <string name="select_offer_to_print">Select offer to print</string>
+    <string name="confirm_delete_offer_title">Confirm Cancellation</string>
+    <string name="confirm_delete_offer_message">Are you sure you want to delete the offer for property \"%1$s\" from your history?</string>
+    <string name="btn_cancel_desc">Cancel Button</string>
+    <string name="select_offer_to_delete">Select an offer to delete.</string>
+
+    <!-- Agent Tracking View Model -->
+    <string name="offer_saved_successfully">Offer saved successfully</string>
+    <string name="offer_successfully_canceled">Offer successfully canceled</string>
+
+    <!-- Tracked Offer Detail -->
+    <string name="error_loading_offer_history">"Error loading offer history: "</string>
+    <string name="title_tracked_offer_detail_formatted">Detail: %s</string>
+    <string name="label_client_info">Client Info</string>
+    <string name="label_client_name_details">Client Name:</string>
+    <string name="label_client_id_detail">Client ID:</string>
+    <string name="label_property_info">Property Info</string>
+    <string name="label_property_title_detail">Property:</string>
+    <string name="label_property_id_detail">Property ID:</string>
+    <string name="label_offer_details">Offer Details:</string>
+    <string name="label_offer_price_detail">Amount Offered</string>
+    <string name="label_offer_status">Offer Status:</string>
+    <string name="label_action_data_time_detail">Offer Date:</string>
+    <string name="label_counter_attempts">Counteroffer attempts count:</string>
+    <string name="label_client_notes_details">Client Notes:</string>
+    <string name="counteroffer_sent_status">Counteroffer Sent</string>
+    <string name="id_offer_missing_or_invalid">Offer ID missing or invalid.</string>
+    <string name="offer_details_not_found_for_id">Offer details not found for ID: %s</string>
+
+    <!-- Manual Offer -->
+    <string name="manual_offer_title">Manual Offer Add</string>
+    <string name="manual_offer_hint">Write Offer Received</string>
+    <string name="note_hint">Make an Note</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="cell_phone">Cell. Phone</string>
+
+    <string name="client_data_step1">Step 1 - Client Data</string>
+    <string name="search_prop_step2">Step 2 - Property Search</string>
+    <string name="spinner1_item0">Select Region</string>
+    <string name="spinner2_item0">Select Province</string>
+    <string name="spinner3_item0">Select City</string>
+    <string name="spinner4_item0">Select Property Title</string>
+    <string name="client_offer_step3">Step 3 - Client Offer</string>
+    <string name="final_status_step4">Step 4 - Final Status</string>
+    <string name="spinner_offer_state_item0">Select Offer Status</string>
+
+    <string name="spinner_required_action">Required action for spinner:</string>
+
+    <!-- New Agency Manager -->
+    <string name="create_account_label">Create Account</string>
+    <string name="content_title_new_a_m">A.M.</string>
+    <string name="generate_pwd_desc">Generate Default Password</string>
+    <string name="manager_email_helper">Enter the professional email for the Manager login.</string>
+    <string name="pwd_creation_helper">Generate a new secure temporary password by clicking the key symbol to right or create one manually in the appropriate field.
+        \nThe credentials created in this screen will be used for the first system login.
+        \nThe default password is valid for 14 days. The manager user can change it upon first login, or later, before expiration.</string>
+
+    <!-- New Support Account -->
+    <string name="new_support_account_info">Here you can create a new support account:</string>
+    <string name="content_title_new_tech_supp">Technical S.</string>
+
+    <!-- Default Admin Pwd Changer -->
+    <string name="content_title_def_pwd_admin">Change Password D.</string>
+    <string name="curr_pwd">Current Password (Default)</string>
+    <string name="new_pwd">New Password</string>
+    <string name="confirm_new_pwd">Confirm New Password</string>
+    <string name="pwd_requirements_helper">"Must meet the following security criteria:
+        1 UPPERCASE,
+        1 Lowercase,
+        1 Number
+        2 Special characters,
+        Min 12 and Max 20 characters."
+    </string>
+    <string name="pwd_criteria_length">Between 12 and 20 characters</string>
+    <string name="pwd_criteria_uppercase">At least 1 uppercase letter (A-Z)</string>
+    <string name="pwd_criteria_lowercase">At least 1 lowercase letter (a-z)</string>
+    <string name="pwd_criteria_number">At least 1 number (0–9)</string>
+    <string name="pwd_criteria_special_chars">At least 2 special characters (!, @, #, $, etc.)</string>
+
+    <string name="pwd_strength_terrible">Terrible</string>
+    <string name="pwd_strength_weak">Weak</string>
+    <string name="pwd_strength_fair">Fair</string>
+    <string name="pwd_strength_good">Good</string>
+    <string name="pwd_strength_strong">Strong</string>
+    <string name="pwd_strength_excellent">Excellent</string>
+    <string name="pwd_too_long">Too Long</string>
+
+    <!-- Personal Data -->
+    <string name="personal_data_admin_pers_dat_txt">PERSONAL DATA</string>
+    <string name="personal_data_admin_profile_txt">PROFILE</string>
+    <string name="personal_data_admin_change_profile_picture">Change profile picture</string>
+    <string name="personal_data_admin_full_name">Full Name</string>
+    <string name="personal_data_admin_professional_email">Professional Email</string>
+    <string name="personal_data_admin_system_audit">System Information (Audit)</string>
+    <string name="personal_data_admin_professional_contact_info">Professional Contact Information</string>
+    <string name="personal_data_admin_credentials_and_security">Credentials and Security</string>
+
+    <string name="personal_data_modify_pwd">Modify Password</string>
+    <string name="personal_data_current_role">Current Role</string>
+    <string name="personal_data_last_access">Last Access</string>
+
+    <!-- User Management -->
+    <string name="manage_agency_managers">Manage Agency Managers</string>
+    <string name="manage_real_estate_agents">Manage Real Estate Agents</string>
+    <string name="manage_clients">Manage Clients</string>
+    <string name="professional_email">Professional email:</string>
+    <string name="date_created">Date created:</string>
+    <string name="status_label">Status:</string>
+    <string name="no_user_manage_msg">No users available</string>
+
+    <!-- User Management Category Selection -->
+    <string name="set_account">Set Account</string>
+    <string name="set_role">Set Role</string>
+    <string name="remove">Remove</string>
+    <string name="suspend">Suspend</string>
+    <string name="real_estate_a_m_role">Real Estate A.M.</string>
+    <string name="user_role">User</string>
+
+    <!-- Client - Tracking Sent Offer -->
+    <string name="sent_offers_title">Sent offers</string>
+    <string name="no_offers_sent">No Offers sent</string>
+    <string name="offer_sent_on">"Sent on %s at %s"</string>
+
+    <!-- Client - Tracking Counteroffer Received -->
+    <string name="counteroffer_received_title">Counteroffer Received</string>
+    <string name="no_counteroffers_received">No Counteroffers Received</string>
+    <string name="property_img_desc">Property image</string>
+    <string name="your_offer_label">"Your offer: "</string>
+    <string name="agent_counteroffer_label">"Counter-Offer from the Real Estate Agent: "</string>
+    <string name="btn_cancel">@android:string/cancel</string>
+    <string name="btn_send_response">Reply</string>
+
+    <!-- Client - Dialog Respond to Counteroffer -->
+    <string name="respond_to_counteroffer_title">Respond to Counteroffer</string>
+    <string name="respond_to_counteroffer_info">"The agent has proposed a new amount.
+        Choose an action below.
+        Your response will be sent immediately."</string>
+    <string name="action_make_new_offer">New Offer</string>
+    <string name="hint_new_offer_amount">New offer amount</string>
+    <string name="customer_offer_empty">Customer offer field is empty.</string>
+    <string name="make_a_choice_to_continue">Make a choice to continue</string>
+
+    <!-- Navigation Drawer -->
+    <string name="nav_title1_group">Utility</string>
+    <string name="reserved">Reserved Area</string>
+    <string name="info_ra">Choose your login method:</string>
+    <string name="reserv_default">No role</string>
+    <string name="reserv_entries1">Administrator</string>
+    <string name="reserv_entries2">Real Estate Agency Manager</string>
+    <string name="reserv_entries3">Real Estate Agent</string>
+    <string name="error_spinner">First select the role</string>
+    <string name="contact_us">Contact us</string>
+
+    <string name="contact_us_content_dialog">Dear user,\nif you experience any issues while using the application, please contact us for assistance at one of
+        the following email addresses.\nBest regards,\nthe DietiEstates25 Support Team\n</string>
+
+    <!-- Preference Title -->
+    <string name="screen_header">Screen</string>
+    <string name="location_header">Location</string>
+    <string name="language_header">Local</string>
+
+    <!-- Theme Preferences -->
+    <string name="settings_theme_entries1">System default</string>
+    <string name="settings_theme_entries2">Light</string>
+    <string name="settings_theme_entries3">Dark</string>
+    <string name="settings_theme_title_list_pref">Theme</string>
+    <string name="settings_theme_value_light">Light</string>
+    <string name="settings_theme_value_dark">Dark</string>
+    <string name="settings_theme_error">Theme not found</string>
+    <string name="settings_location_title_switch_pref">Manage location</string>
+    <string name="settings_location_summary">Activating GPS location enables more precise property searches.</string>
+    <string name="error_settings_location">Unable to obtain permissions for current location.</string>
+    <string name="settings_location_denied_title">Location permission required</string>
+    <string name="settings_location_denied">The application needs location permissions. If these permissions are not granted you cannot use location based services.</string>
+    <string name="accurate_location">Use precise location</string>
+    <string name="approximate_location">Use approximate location</string>
+    <string name="settings_lang_entries1">Italian</string>
+    <string name="settings_lang_entries2">English</string>
+    <string name="settings_lang_title_list_pref">Change local</string>
+    <string name="settings_lang_error">Local not found</string>
+    <string name="cancel_pref_dialog_btn">Cancel</string>
+
+    <!-- ActionBarDrawerToggle -->
+    <string name="nav_open">open</string>
+    <string name="nav_close">close</string>
+
+    <!-- Dialogs -->
+    <string name="info_dialog_title">Success</string>
+    <string name="alert_dialog_title">Alert</string>
+
+    <!-- LOGIN -->
+    <string name="login_title">Access Area</string>
+
+    <!-- SIGN UP -->
+    <string name="validation_error_firstname_lastname_username_required">First name, Last name, and username are required.</string>
+    <string name="validation_error_email_invalid">Invalid email format.</string>
+    <string name="validation_error_password_short">The password must be at least 8 characters long.</string>
+    <string name="validation_error_passwords_no_match">The passwords do not match.</string>
+    <string name="validation_error_dob_required">Date of birth is required.</string>
+    <string name="validation_error_dob_underage">You must be 18+ to register.</string>
+    <string name="validation_error_dob_overage">The maximum age allowed to register is 90 years.</string>
+    <string name="validation_error_pob_required">Place of birth is required.</string>
+
+    <!-- RESERVED AREA -->
+    <string name="login_title_for_role">Access %s</string>
+    <string name="role_selected_message">You selected: %s. Please enter your credentials.</string>
+    <string name="offer_notes_hint">Additional notes</string>
+    <string name="exite_offer_mode">Exit Bidding Mode</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="place_of_birth">Place of Birth</string>
+
+    <string name="no_ads_found">No ads found.</string>
+
+</resources>

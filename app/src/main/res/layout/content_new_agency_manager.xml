@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/BackgroundBasicActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/pwd_txt_helper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_agency_m"
+            android:textAppearance="?attr/textAppearanceHeadlineSmall"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_name"
+            android:textColorHint="@color/Text"
+            android:layout_marginBottom="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:startIconDrawable="@drawable/Person">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxt_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:minWidth="400dp"
+                android:textColor="@color/Text"
+                android:inputType="textPersonName|textCapWords"
+                android:imeOptions="actionNext" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name"
+            android:textColorHint="@color/Text"
+            android:layout_marginBottom="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:startIconDrawable="@drawable/Person">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxt_last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:minWidth="400dp"
+                android:textColor="@color/Text"
+                android:inputType="textPersonName|textCapWords"
+                android:imeOptions="actionNext" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:textColorHint="@color/Text"
+            android:layout_marginBottom="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:startIconDrawable="@drawable/Email"
+            app:helperText="@string/manager_email_helper"
+            app:helperTextTextColor="@color/Text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:minWidth="400dp"
+                android:textColor="@color/Text"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pwdInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/generate_pwd"
+                android:hint="@string/password"
+                android:textColorHint="@color/Text"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/Pwd">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTxt_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:minWidth="400dp"
+                    android:textColor="@color/Text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <FrameLayout
+                android:id="@+id/generate_pwd"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/custom_rectangle">
+
+                <ImageButton
+                    android:id="@+id/btn_generate_pwd"
+                    android:layout_width="50dp"
+                    android:layout_height="58dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="@string/generate_pwd_desc"
+                    android:src="@drawable/Key" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pwdInputLayout"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="15dp"
+                android:text="@string/pwd_creation_helper"
+                android:textColor="@color/Text"
+                android:textAppearance="?attr/textAppearanceLabelSmall"
+                tools:ignore="VisualLintLongText" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_create_manager_account"
+            style="@style/SelectableItemBackground"
+            android:backgroundTint="@color/Background"
+            android:textColor="@color/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/create_account_label" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

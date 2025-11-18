@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/usr_img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/Person"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/user_rule"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textAppearance="?attr/textAppearanceTitleSmall"
+            android:textStyle="bold"
+            tools:text="User Rule"
+            app:layout_constraintStart_toEndOf="@+id/usr_img"
+            app:layout_constraintTop_toTopOf="@+id/usr_img"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/user_full_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceTitleSmall"
+            android:textStyle="bold"
+            tools:text="Nome Cognome"
+            app:layout_constraintStart_toStartOf="@id/user_rule"
+            app:layout_constraintTop_toBottomOf="@id/user_rule"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/professional_email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/professional_email"
+            android:textStyle="bold"
+            android:textAppearance="?attr/textAppearanceLabelMedium"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_full_name" />
+
+        <TextView
+            android:id="@+id/professional_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="mario.rossi@agencymanager.dietiestates25.com"
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/professional_email_label" />
+
+        <TextView
+            android:id="@+id/user_date_created_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_created"
+            android:textStyle="bold"
+            android:textAppearance="?attr/textAppearanceLabelMedium"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/professional_email" />
+
+        <TextView
+            android:id="@+id/status_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_label"
+            android:textStyle="bold"
+            android:textAppearance="?attr/textAppearanceLabelMedium"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_date_created_label" />
+
+        <TextView
+            android:id="@+id/user_date_created"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="12/03/25 - 11:17"
+            android:textStyle="italic"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/user_date_created_label"
+            app:layout_constraintBaseline_toBaselineOf="@id/user_date_created_label"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/status"
+            style="@style/StatusStyle"
+            tools:text="Attivo"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toEndOf="@id/status_label"
+            app:layout_constraintBaseline_toBaselineOf="@id/status_label" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

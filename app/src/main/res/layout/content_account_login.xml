@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="45dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_gravity="center_vertical"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/BackgroundCardView"
+        android:padding="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:hint="@string/editTextEmailUsername"
+            android:textColorHint="@color/Text"
+            app:startIconDrawable="@drawable/Person">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="300dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:drawablePadding="8dp"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/Text"
+                android:textColorHint="@color/Text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColorHint="@color/Text"
+            android:layout_marginTop="2dp"
+            app:startIconDrawable="@drawable/Lock"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="300dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:drawablePadding="8dp"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/Text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnPwdRecovery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pwdRecovery"
+            android:textColor="@color/Text"
+            android:textSize="@dimen/btn2_text_size"
+            android:backgroundTint="@color/Background"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center"
+            app:cornerRadius="20sp" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loginBtn"
+            android:textColor="@color/Text"
+            android:textSize="@dimen/btn_text_size"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="@color/Background"
+            android:layout_gravity="center"
+            app:cornerRadius="20sp" />
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

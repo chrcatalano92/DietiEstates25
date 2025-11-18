@@ -1,0 +1,39 @@
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.preference.Preference app:title="@string/settings">
+    </androidx.preference.Preference>
+
+    <androidx.preference.PreferenceCategory app:title="@string/screen_header">
+        <ListPreference
+            app:defaultValue="@string/settings_value_default"
+            app:entries="@array/settings_theme_entries"
+            app:entryValues="@array/settings_theme_values"
+            app:key="@string/settings_theme_key"
+            app:title="@string/settings_theme_title_list_pref"
+            app:icon="@drawable/Brightness"
+            app:useSimpleSummaryProvider="true"
+            app:negativeButtonText="@string/cancel_pref_dialog_btn"/>
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory app:title="@string/language_header">
+        <ListPreference
+            app:defaultValue="@string/settings_lang_it"
+            app:entries="@array/settings_lang_entries"
+            app:entryValues="@array/settings_lang_values"
+            app:key="@string/settings_lang_key"
+            app:title="@string/settings_lang_title_list_pref"
+            app:icon="@drawable/Language"
+            app:useSimpleSummaryProvider="true"
+            app:negativeButtonText="@string/cancel_pref_dialog_btn"/>
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory app:title="@string/location_header">
+        <androidx.preference.SwitchPreference
+            app:title="@string/settings_location_title_switch_pref"
+            app:key="@string/settings_location_key"
+            app:icon="@drawable/PropertyPin"
+            app:defaultValue="@string/settings_value_default"
+            app:summary="@string/settings_location_summary"/>
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

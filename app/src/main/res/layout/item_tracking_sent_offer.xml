@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.Material3.CardView.Outlined"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BackgroundOfferCardView"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/property_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/property_img_desc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/property_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textAppearance="?attr/textAppearanceTitleSmall"
+            android:minLines="2"
+            android:ellipsize="end"
+            app:layout_constraintStart_toEndOf="@id/property_img"
+            app:layout_constraintTop_toTopOf="@id/property_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Villa con vista mare" />
+
+        <TextView
+            android:id="@+id/offer_amount_label"
+            style="@style/DetailLabelStyle"
+            android:text="@string/your_offer_label"
+            app:layout_constraintStart_toStartOf="@+id/property_title"
+            app:layout_constraintTop_toBottomOf="@+id/property_title" />
+
+        <TextView
+            android:id="@+id/offer_amount_value"
+            style="@style/DetailValueStyle"
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/offer_amount_label"
+            app:layout_constraintTop_toBottomOf="@id/offer_amount_label"
+            tools:text="240.000,00" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/offer_status_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            android:backgroundTint="@color/BackgroundOfferStatusChip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/property_img"
+            tools:text="Inviata il 01/08/2025 alle ore 11:00" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

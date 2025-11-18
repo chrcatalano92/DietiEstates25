@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme Preference -->
+    <string-array name="settings_theme_entries">
+        <item>@string/settings_theme_entries1</item>
+        <item>@string/settings_theme_entries2</item>
+        <item>@string/settings_theme_entries3</item>
+    </string-array>
+
+    <string-array name="settings_theme_values">
+        <item>@string/settings_value_default</item>
+        <item>@string/settings_theme_value_light</item>
+        <item>@string/settings_theme_value_dark</item>
+    </string-array>
+</resources>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DietiEstates25"
+        tools:targetApi="31">
+        <activity
+            android:name=".support_classes.google_map.map_point_clicked.MapPointClickedActivity"
+            android:exported="false"
+            android:parentActivityName=".AdvancedSearchActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AdvancedSearchActivity" />
+        </activity>
+        <activity
+            android:name=".dashboards.user_area.services.tracking_sent_offer.TrackingSentOfferActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboards.user_area.services.counteroffer_received.TrackingCounterofferReceivedActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".dashboards.administrator_area.additional_settings.usr_management.management_category_selection.UserManagementCategorySelectionActivity"
+            android:exported="false"
+            android:parentActivityName=".dashboards.administrator_area.additional_settings.usr_management.user_management.UserManagementActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboards.administrator_area.additional_settings.usr_management.user_management.UserManagementActivity" />
+        </activity>
+        <activity
+            android:name=".dashboards.administrator_area.additional_settings.usr_management.user_management.UserManagementActivity"
+            android:exported="false"
+            android:parentActivityName=".dashboards.administrator_area.AdminDashboardActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboards.administrator_area.AdminDashboardActivity" />
+        </activity>
+        <activity
+            android:name=".dashboards.administrator_area.additional_settings.personal_data.PersonalDataAdminActivity"
+            android:exported="false"
+            android:parentActivityName=".dashboards.administrator_area.AdminDashboardActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboards.administrator_area.AdminDashboardActivity" />
+        </activity>
+        <activity
+            android:name=".dashboards.administrator_area.additional_settings.default_admin_pwd_changer.DefaultAdminPwdChangerActivity"
+            android:exported="false"
+            android:parentActivityName=".dashboards.administrator_area.AdminDashboardActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboards.administrator_area.AdminDashboardActivity" />
+        </activity>
+        <activity
+            android:name=".dashboards.administrator_area.services.new_support_account.NewAnalystActivity"
+            android:exported="false"
+            android:parentActivityName=".dashboards.administrator_area.AdminDashboardActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboards.administrator_area.AdminDashboardActivity" />
+        </activity>
+        <activity
+            android:name=".dashboards.administrator_area.services.new_support_account.NewDeveloperActivity"
+            android:exported="false"
+            android:parentActivityName=".dashboards.administrator_area.AdminDashboardActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboards.administrator_area.AdminDashboardActivity" />
+        </activity>
+        <activity
+            android:name=".dashboards.administrator_area.services.new_support_account.NewTechnicalSupportActivity"
+            android:exported="false"
+            android:parentActivityName=".dashboards.administrator_area.AdminDashboardActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboards.administrator_area.AdminDashboardActivity" />
+        </activity>
+        <activity
+            android:name=".dashboards.administrator_area.services.new_support_account.NewAdministrativeAssistantActivity"
+            android:exported="false"
+            android:parentActivityName=".dashboards.administrator_area.AdminDashboardActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboards.administrator_area.AdminDashboardActivity" />
+        </activity>
+        <activity
+            android:name=".dashboards.administrator_area.services.new_agency_manager.NewAgencyManagerActivity"
+            android:exported="false"
+            android:parentActivityName=".dashboards.administrator_area.AdminDashboardActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboards.administrator_area.AdminDashboardActivity" />
+        </activity>
+        <activity
+            android:name=".dashboards.real_estate_agent_area.services.tracking.TrackedOfferDetailActivity"
+            android:exported="false"
+            android:parentActivityName=".dashboards.real_estate_agent_area.services.tracking.TrackingActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboards.real_estate_agent_area.services.tracking.TrackingActivity" />
+        </activity>
+        <activity
+            android:name=".dashboards.real_estate_agent_area.services.manual_offer_add.ManualOfferAddActivity"
+            android:exported="false"
+            android:parentActivityName=".dashboards.real_estate_agent_area.READashboardActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboards.real_estate_agent_area.READashboardActivity" />
+        </activity>
+        <activity
+            android:name=".dashboards.real_estate_agent_area.services.tracking.TrackingActivity"
+            android:exported="false"
+            android:parentActivityName=".dashboards.real_estate_agent_area.READashboardActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboards.real_estate_agent_area.READashboardActivity" />
+        </activity>
+        <activity
+            android:name=".dashboards.real_estate_agent_area.services.off_mng.OfferManagementActivity"
+            android:exported="false"
+            android:parentActivityName=".dashboards.real_estate_agent_area.READashboardActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboards.real_estate_agent_area.READashboardActivity" />
+        </activity>
+        <activity
+            android:name=".dashboards.real_estate_agent_area.services.real_estate_adv_create.DefineExactLocationStepFourActivity"
+            android:exported="false"
+            android:parentActivityName=".dashboards.real_estate_agent_area.services.real_estate_adv_create.NewPropertyTypeStepThreeActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboards.real_estate_agent_area.services.real_estate_adv_create.NewPropertyTypeStepThreeActivity" />
+        </activity>
+        <activity
+            android:name=".dashboards.real_estate_agent_area.services.real_estate_adv_create.NewPropertyTypeStepThreeActivity"
+            android:exported="false"
+            android:parentActivityName=".dashboards.real_estate_agent_area.services.real_estate_adv_create.ClassifyNewPropertyStepTwoActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboards.real_estate_agent_area.services.real_estate_adv_create.ClassifyNewPropertyStepTwoActivity" />
+        </activity>
+        <activity
+            android:name=".dashboards.real_estate_agent_area.services.real_estate_adv_create.ClassifyNewPropertyStepTwoActivity"
+            android:exported="false"
+            android:parentActivityName=".dashboards.real_estate_agent_area.services.real_estate_adv_create.PropertyListingCreateStepOneActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboards.real_estate_agent_area.services.real_estate_adv_create.PropertyListingCreateStepOneActivity" />
+        </activity>
+        <activity
+            android:name=".dashboards.real_estate_agent_area.services.real_estate_adv_create.PropertyListingCreateStepOneActivity"
+            android:exported="false"
+            android:parentActivityName=".dashboards.real_estate_agent_area.READashboardActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboards.real_estate_agent_area.READashboardActivity" />
+        </activity>
+        <activity
+            android:name=".dashboards.administrator_area.AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboards.real_estate_agency_manager_area.REAMDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboards.real_estate_agent_area.READashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdvancedSearchActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyClQgV57R_8_kkPSq-RCz7RU7H764_N1Ug" />
+
+        <activity
+            android:name=".FullDescPropActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DietiEstates25" />
+        <activity
+            android:name=".PropertyActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.DietiEstates25">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/NoAnimationTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

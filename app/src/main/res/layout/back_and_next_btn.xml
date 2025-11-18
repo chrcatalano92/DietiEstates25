@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="32dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backBtn"
+        style="@style/SelectableItemBackground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/Background"
+        android:minWidth="120dp"
+        android:maxWidth="160dp"
+        android:text="@string/back_btn"
+        android:textColor="@color/Text"
+        app:strokeColor="@color/Text"
+        app:strokeWidth="1dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nextBtn"
+        style="@style/SelectableItemBackground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/Background"
+        android:minWidth="120dp"
+        android:maxWidth="160dp"
+        android:text="@string/next_btn"
+        android:textColor="@color/Text"
+        app:strokeColor="@color/Text"
+        app:strokeWidth="1dp" />
+</LinearLayout>

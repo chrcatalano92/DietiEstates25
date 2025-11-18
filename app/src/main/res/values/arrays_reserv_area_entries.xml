@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_reserv_entries">
+        <item>@string/reserv_default</item>
+        <item>@string/reserv_entries1</item>
+        <item>@string/reserv_entries2</item>
+        <item>@string/reserv_entries3</item>
+    </string-array>
+</resources>

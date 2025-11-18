@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:background="@color/BackgroundBasicActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/SelectionHeaderTextStyle"
+            android:text="@string/personal_data_admin_profile_txt"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/image_view_profile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.App.CircleImageView"
+                app:strokeColor="@color/Text2"
+                app:strokeWidth="2dp"
+                app:srcCompat="@drawable/AdminCircle"
+                tools:src="@drawable/AdminCircle" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_change_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="-108dp"
+                android:layout_marginBottom="-68dp"
+                android:contentDescription="@string/personal_data_admin_change_profile_picture"
+                app:srcCompat="@drawable/Edit"
+                app:backgroundTint="@color/Background"
+                app:layout_constraintStart_toStartOf="@+id/image_view_profile"
+                app:layout_constraintTop_toTopOf="@+id/image_view_profile"
+                app:layout_constraintBottom_toBottomOf="@+id/image_view_profile"
+                app:layout_constraintEnd_toEndOf="@+id/image_view_profile"
+                app:fabSize="mini" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/full_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/personal_data_admin_full_name"
+            android:textColorHint="@color/Text"
+            app:startIconDrawable="@drawable/Person"
+            app:endIconDrawable="@drawable/Edit"
+            app:endIconMode="custom">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxt_full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="400dp"
+                tools:text="Mario Rossi"
+                android:enabled="false"
+                android:textColor="@color/Text"
+                android:inputType="text"
+                android:imeOptions="actionDone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/username"
+            android:textColorHint="@color/Text"
+            app:startIconDrawable="@drawable/Person"
+            app:endIconDrawable="@drawable/Edit"
+            app:endIconMode="custom">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxt_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="400dp"
+                tools:text="admin.rossi"
+                android:enabled="false"
+                android:textColor="@color/Text"
+                android:inputType="text"
+                android:imeOptions="actionDone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            style="@style/SelectionHeaderTextStyle"
+            android:text="@string/personal_data_admin_credentials_and_security" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/dividerHorizontal" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/email"
+            android:textColorHint="@color/Text"
+            app:startIconDrawable="@drawable/Email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="400dp"
+                android:enabled="false"
+                android:textColor="@color/Text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/password"
+            android:textColorHint="@color/Text"
+            app:startIconDrawable="@drawable/Pwd"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxt_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="400dp"
+                tools:text="****************"
+                android:enabled="false"
+                android:inputType="textPassword"
+                android:textColor="@color/Text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_change_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_gravity="end"
+            android:text="@string/personal_data_modify_pwd"
+            android:textColor="@color/Text" />
+
+        <TextView
+            style="@style/SelectionHeaderTextStyle"
+            android:text="@string/personal_data_admin_system_audit" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/dividerHorizontal" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/personal_data_current_role"
+            android:textColorHint="@color/Text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxt_current_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="400dp"
+                tools:text="Amministratore (ROLE_ADMIN)"
+                android:enabled="false"
+                android:textColor="@color/Text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/personal_data_last_access"
+            android:textColorHint="@color/Text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxt_last_access"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="400dp"
+                tools:text="22/04/2025 19:15"
+                android:enabled="false"
+                android:textColor="@color/Text" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

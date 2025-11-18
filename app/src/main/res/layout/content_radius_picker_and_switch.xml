@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/BackgroundArc"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/radius"
+        android:textSize="20sp"
+        android:textColor="@color/Text"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/cardview_shadow_start_color"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="1dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginTop="@dimen/margin_start"
+            android:text="@string/search_radius"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <include layout="@layout/picker" />
+
+        <include layout="@layout/material_switch" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

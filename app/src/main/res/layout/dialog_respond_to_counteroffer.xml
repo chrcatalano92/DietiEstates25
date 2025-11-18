@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/custom_rectangle"
+        android:padding="20dp">
+
+        <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+            android:id="@+id/drag_handle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/respond_to_counteroffer_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/respond_to_counteroffer_title"
+            android:textAppearance="?attr/textAppearanceHeadlineSmall"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/drag_handle" />
+
+        <TextView
+            android:id="@+id/respond_to_counteroffer_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/respond_to_counteroffer_info"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/respond_to_counteroffer_title" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/counteroffer_agent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/counteroffer_received_title"
+            android:background="@color/Background_TextField_Counteroffer_dialog"
+            android:enabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/respond_to_counteroffer_info"
+            app:startIconScaleType="center"
+            app:startIconDrawable="@drawable/Euro">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/counteroffer_agent_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="400dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                tools:text="250.000,00"
+                android:enabled="false"
+                android:gravity="center"
+                android:layout_marginBottom="10dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggle_btn_group_response"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/counteroffer_agent_layout"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_accept"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="72dp"
+                android:maxWidth="200dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/green_accepted"
+                android:paddingStart="8dp"
+                android:paddingEnd="12dp"
+                android:textAppearance="?attr/textAppearanceButton"
+                android:textSize="12sp"
+                android:text="@string/yes"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_reject"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="72dp"
+                android:maxWidth="200dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/red_rejected2"
+                android:paddingStart="8dp"
+                android:paddingEnd="12dp"
+                android:textAppearance="?attr/textAppearanceButton"
+                android:textSize="12sp"
+                android:text="@string/no"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_make_new_offer"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/orange_make_new_offer"
+                android:ellipsize="none"
+                android:gravity="center"
+                android:lines="2"
+                android:maxLines="2"
+                android:minWidth="120dp"
+                android:minHeight="72dp"
+                android:padding="8dp"
+                android:singleLine="false"
+                android:text="@string/action_make_new_offer"
+                android:textAlignment="center"
+                android:textAppearance="?attr/textAppearanceButton"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/new_client_offer_layout"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/Background_TextField_Counteroffer_dialog"
+            android:hint="@string/hint_new_offer_amount"
+            android:textColorHint="@color/TextColorHint_Counteroffer_dialog"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggle_btn_group_response"
+            app:startIconDrawable="@drawable/Euro"
+            tools:visibility="visible">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/new_client_offer_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:inputType="numberDecimal"
+                android:minWidth="400dp"
+                android:textAppearance="?attr/textAppearanceBodyLarge"
+                android:textColor="@color/Text"
+                android:textColorHint="@color/Text"
+                android:textSize="@dimen/text_size" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/notes_layout"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/Background_TextField_Counteroffer_dialog"
+            android:gravity="center_horizontal"
+            android:hint="@string/notes_hint"
+            android:textColorHint="@color/TextColorHint_Counteroffer_dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_client_offer_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/notes_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:textSize="@dimen/text_size"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minWidth="400dp"
+                android:minLines="2" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:maxWidth="320dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notes_layout">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="?attr/materialButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/Background1"
+                android:text="@string/btn_cancel"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_send_response"
+                style="?attr/materialButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/Background1.2"
+                android:text="@string/btn_send_response"
+                android:textColor="@color/Text"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

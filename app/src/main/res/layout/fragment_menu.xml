@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundArc"
+    tools:context=".fragments_main_activity.MenuFragment">
+
+    <include
+        android:id="@+id/headerLayout"
+        layout="@layout/content_account_header" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp">
+
+        <Button
+            android:id="@+id/usrLoginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/Background"
+            android:gravity="center"
+            android:text="@string/loginBtn"
+            android:textColor="@color/Text"
+            android:textSize="@dimen/btn_text_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/usrRegBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/Background"
+            android:gravity="center"
+            android:text="@string/regUsrBtn"
+            android:textColor="@color/Text"
+            android:textSize="@dimen/btn2_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usrLoginBtn" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:gravity="center"
+            android:text="@string/infoUsrLogin"
+            android:textColor="@color/Text"
+            android:textSize="@dimen/text_title"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usrRegBtn" />
+
+        <ImageButton
+            android:id="@+id/googleUsrLoginBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/Background"
+            android:foregroundGravity="center"
+            android:importantForAccessibility="no"
+            android:scaleType="centerInside"
+            android:src="@drawable/google_logo"
+            app:layout_constraintEnd_toStartOf="@+id/facebookUsrLoginBtn"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageButton
+            android:id="@+id/facebookUsrLoginBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/Background"
+            android:foregroundGravity="center"
+            android:importantForAccessibility="no"
+            android:scaleType="centerInside"
+            android:src="@drawable/facebook_logo"
+            app:layout_constraintEnd_toStartOf="@+id/githubUsrLoginBtn"
+            app:layout_constraintStart_toEndOf="@+id/googleUsrLoginBtn"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageButton
+            android:id="@+id/githubUsrLoginBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/Background"
+            android:foregroundGravity="center"
+            android:importantForAccessibility="no"
+            android:scaleType="centerInside"
+            android:src="@drawable/github_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/facebookUsrLoginBtn"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/loginSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="usrLoginBtn,usrRegBtn,textView,googleUsrLoginBtn,facebookUsrLoginBtn,githubUsrLoginBtn"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

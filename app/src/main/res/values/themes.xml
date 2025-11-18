@@ -1,0 +1,95 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.DietiEstates25" parent="Theme.Material3.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="android:statusBarColor">@color/gray_light</item>
+        <item name="toolbarStyle">@style/Widget.Material3.Toolbar</item>
+    </style>
+
+    <style name="Theme.DietiEstates25_ActionBar" parent="Theme.Material3.Light" />
+
+    <style name="NoAnimationTheme" parent="Theme.DietiEstates25">
+        <item name="android:windowAnimationStyle">@style/NoAnimationWindowStyle</item>
+    </style>
+
+    <style name="NoAnimationWindowStyle">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+    </style>
+
+    <drawable name="Logo">@drawable/logo</drawable>
+    <drawable name="Brightness">@drawable/baseline_settings_brightness_24</drawable>
+    <drawable name="Language">@drawable/baseline_language_24</drawable>
+    <drawable name="PropertyPin">@drawable/baseline_location_pin_24</drawable>
+    <drawable name="PropertyPinMarker">@drawable/property_pin_marker_light</drawable>
+    <drawable name="UsrPinMarker">@drawable/usr_pin_marker_light</drawable>
+    <drawable name="Person">@drawable/baseline_person_24</drawable>
+    <drawable name="PersonalDataManagement">@drawable/baseline_manage_accounts_24</drawable>
+    <drawable name="House">@drawable/baseline_house_24</drawable>
+    <drawable name="Email">@drawable/baseline_email_24</drawable>
+    <drawable name="Lock">@drawable/baseline_lock_24</drawable>
+    <drawable name="Face">@drawable/img_sad_face</drawable>
+    <drawable name="UsersGroup">@drawable/users_group</drawable>
+    <drawable name="Managers">@drawable/outline_support_agent_24</drawable>
+    <drawable name="Agents">@drawable/baseline_holiday_village_24</drawable>
+    <drawable name="Map">@drawable/baseline_map_24</drawable>
+    <drawable name="ForwardIOS">@drawable/baseline_arrow_forward_ios_24</drawable>
+    <drawable name="AddPhoto">@drawable/baseline_add_photo_alternate_24</drawable>
+    <drawable name="PasswordRecovery">@drawable/img_password_recovery_dark</drawable>
+    <drawable name="AccountCircle">@drawable/account_img_light</drawable>
+    <drawable name="AdminCircle">@drawable/account_img_admin_light</drawable>
+    <drawable name="Admin">@drawable/admin_user</drawable>
+    <drawable name="ShowImg">@drawable/baseline_image_24</drawable>
+    <drawable name="HideImg">@drawable/baseline_hide_image_24</drawable>
+    <drawable name="Close">@drawable/baseline_close_24</drawable>
+    <drawable name="Exit">@drawable/exit</drawable>
+    <drawable name="Back">@drawable/baseline_arrow_back_24</drawable>
+    <drawable name="Euro">@drawable/baseline_euro_24</drawable>
+    <drawable name="Note">@drawable/baseline_note</drawable>
+    <drawable name="Edit">@drawable/outline_edit_24</drawable>
+    <drawable name="CellPhone">@drawable/baseline_smartphone_24</drawable>
+    <drawable name="Tel">@drawable/baseline_telephone_24</drawable>
+    <drawable name="AcceptOffer">@drawable/baseline_task_alt_24</drawable>
+    <drawable name="RejectOffer">@drawable/baseline_highlight_off_24</drawable>
+    <drawable name="Counteroffer">@drawable/baseline_reply_24</drawable>
+    <drawable name="Offer">@drawable/baseline_local_offer_24</drawable>
+    <drawable name="Offer2">@drawable/offer</drawable>
+    <drawable name="OfflineIndicator">@drawable/offline_indicator_background</drawable>
+    <drawable name="List">@drawable/baseline_view_list_24</drawable>
+    <drawable name="Filter">@drawable/outline_filter_alt_24</drawable>
+    <drawable name="Server">@drawable/server_dark</drawable>
+    <drawable name="Pwd">@drawable/baseline_password_24</drawable>
+    <drawable name="Key">@drawable/outline_key_24</drawable>
+    <drawable name="Remove">@drawable/baseline_remove_24</drawable>
+    <drawable name="Add">@drawable/baseline_add_24</drawable>
+    <drawable name="EuroIcon">@drawable/img_euro_light</drawable>
+    <drawable name="BackgroundCounterOfferSection">@drawable/background_counteroffer_section
+    </drawable>
+    <color name="Background">@color/gray_light</color>
+    <color name="Background1">@color/white</color>
+    <color name="Background1.2">@color/gray_light2</color>
+    <color name="Background_TextField_Counteroffer_dialog">@color/white</color>
+    <color name="CenterColor">@color/gray_light</color>
+    <color name="BackgroundCardView">@color/cardview_light_background</color>
+    <color name="BackgroundOfferCardView">@color/gray_light</color>
+    <color name="BackgroundOfferStatusChip">@color/white</color>
+    <color name="BackgroundCounterOfferCardView">@color/gray_light</color>
+    <color name="BackgroundArc">@color/light_mode</color>
+    <color name="BackgroundBasicActivity">@color/cardview_light_background</color>
+    <color name="BackgroundToggle">@color/gray_light</color>
+    <color name="SelectorColor">@color/black</color>
+    <color name="DividingLineColorSelector">#6FE6DADA</color>
+    <color name="Text">@color/black</color>
+    <color name="Text2">@color/black</color>
+    <color name="TextColorHint_Counteroffer_dialog">@color/dark_mode</color>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DietiEstates25" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+</resources>

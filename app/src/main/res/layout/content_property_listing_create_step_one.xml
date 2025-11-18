@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/BackgroundBasicActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/steps"
+            layout="@layout/content_info_steps" />
+
+        <ImageButton
+            android:id="@+id/choosePhotoBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/AddPhoto"
+            android:backgroundTint="@color/Background"
+            style="@style/SelectableItemBackground"
+            android:importantForAccessibility="no" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:importantForAccessibility="no"
+                android:text="@string/show_hide_photo"
+                android:textColor="@color/Text"
+                android:textSize="@dimen/text_size"
+                tools:ignore="TextSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/show_hide_img_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/Background"
+                android:importantForAccessibility="no"
+                android:scaleType="centerCrop"
+                android:src="@drawable/HideImg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/slide_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/chosenImgFile"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerInside"
+                android:importantForAccessibility="no" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/title"
+                android:textColorHint="@color/Text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/titleEditTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="300dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:inputType="textCapWords|textAutoCorrect"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:textColor="@color/Text"
+                    android:textSize="@dimen/text_size"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/desc"
+                android:textColorHint="@color/Text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/descriptionEditTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="300dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:inputType="textCapSentences|textMultiLine|textAutoCorrect"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/Text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/price"
+                android:textColorHint="@color/Text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/priceEditTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="300dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:maxLines="1"
+                    android:inputType="number|numberDecimal"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/Text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/dimensions"
+                android:textColorHint="@color/Text"
+                app:endIconDrawable="@drawable/square_meters"
+                app:endIconMode="custom"
+                app:endIconScaleType="centerInside">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dimensionsEditTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:inputType="number"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:minWidth="300dp"
+                    android:textColor="@color/Text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/rooms"
+                android:textColorHint="@color/Text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/roomsEditTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:minWidth="300dp"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/Text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/level"
+                android:textColorHint="@color/Text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/levelEditTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:minWidth="300dp"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/Text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/servicesTxtLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/services"
+                android:textColorHint="@color/Text"
+                android:imeOptions="actionNext">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/servicesEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:minWidth="300dp"
+                    android:maxLines="6"
+                    android:inputType="textMultiLine|textAutoCorrect|textAutoComplete"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/Text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/address"
+                android:textColorHint="@color/Text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/addressEditTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:minWidth="300dp"
+                    android:maxLines="2"
+                    android:inputType="textCapSentences|textAutoComplete"
+                    android:imeOptions="actionDone"
+                    android:textColor="@color/Text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/energy_class"
+                    android:textColor="@color/Text"
+                    android:textSize="@dimen/text_title" />
+
+                <include
+                    android:id="@+id/picker"
+                    layout="@layout/picker" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/elevator_lift"
+                android:textSize="@dimen/text_title"
+                android:textColor="@color/Text" />
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggleGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center"
+                app:singleSelection="true"
+                app:selectionRequired="false">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnYes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/BackgroundToggle"
+                    android:checkable="true"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:text="@string/yes"
+                    android:textColor="@color/Text"
+                    app:strokeColor="@drawable/btn_toggle_selector"
+                    app:strokeWidth="2dp"
+                    android:insetLeft="0dp"
+                    android:insetRight="-1dp"
+                    app:iconTint="@drawable/btn_toggle_selector" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/BackgroundToggle"
+                    android:checkable="true"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:text="@string/no"
+                    android:textColor="@color/Text"
+                    app:strokeColor="@drawable/btn_toggle_selector"
+                    app:strokeWidth="2dp"
+                    app:iconTint="@drawable/btn_toggle_selector" />
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <Button
+                android:id="@+id/sendBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                style="@style/SelectableItemBackground"
+                android:backgroundTint="@color/Background"
+                android:textColor="@color/Text"
+                android:text="@string/next_btn" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

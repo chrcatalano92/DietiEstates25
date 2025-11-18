@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/Background">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dialogClose"
+        style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/transparent_20pct_white"
+        android:padding="10dp"
+        android:elevation="12dp"
+        android:translationZ="12dp"
+        android:importantForAccessibility="no"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+        app:icon="@drawable/Close"
+        app:iconSize="28dp"
+        app:iconTint="@color/Text"
+        app:strokeColor="@color/white_50pct"
+        app:rippleColor="@color/primary_20pct"
+        app:tint="?attr/colorOnSurface"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/Person" />
+
+        <TextView
+            android:id="@+id/nameTxtV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:textColor="@color/Text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emailTxtV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:textColor="@color/Text"
+            android:textSize="16sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/logoutBtn"
+            style="@style/SelectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/Background1"
+            android:text="@string/logout"
+            android:textSize="@dimen/btn_text_size"
+            android:textColor="@color/Text" />
+    </LinearLayout>
+</RelativeLayout>

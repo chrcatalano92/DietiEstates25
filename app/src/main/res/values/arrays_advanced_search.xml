@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="filter1_options_sailAndRent">
+        <item>@string/empty_filter</item>
+        <item>Vendita</item>
+        <item>Affitto</item>
+        <item>Affitti brevi</item>
+        <item>Case vacanze</item>
+    </string-array>
+</resources>

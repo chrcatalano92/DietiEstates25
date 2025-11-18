@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/custom_oval_2"/>
+    <item
+        android:drawable="@drawable/baseline_euro_24_light"
+        android:gravity="center"
+        android:left="2dp"
+        android:right="4dp"/>
+</layer-list>

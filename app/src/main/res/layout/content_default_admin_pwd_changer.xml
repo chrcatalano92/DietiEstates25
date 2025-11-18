@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible"
+    android:fillViewport="true"
+    android:background="@color/BackgroundBasicActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="20dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/curr_pwd"
+            android:textColorHint="@color/Text"
+            android:layout_marginBottom="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/Pwd">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxt_curr_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:minWidth="400dp"
+                android:textColor="@color/Text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:inputType="textPassword"
+                android:imeOptions="actionNext" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:id="@+id/newPwdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/generate_new_pwd"
+                android:hint="@string/new_pwd"
+                android:textColorHint="@color/Text"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/Pwd"
+                app:helperTextTextColor="@color/Text"
+                app:helperText="@string/pwd_requirements_helper">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTxt_new_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="400dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:inputType="textPassword"
+                    android:layout_marginBottom="8dp"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/Text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <FrameLayout
+                android:id="@+id/generate_new_pwd"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/custom_rectangle">
+
+                <ImageButton
+                    android:id="@+id/btn_generate_new_def_pwd"
+                    android:layout_width="50dp"
+                    android:layout_height="58dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="@string/generate_pwd_desc"
+                    android:src="@drawable/Key" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/pwd_linear_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="end"
+            android:text="@string/pwd_strength_default"
+            android:textAppearance="?attr/textAppearanceLabelSmall" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/pwd_linear_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:max="100"
+            app:trackCornerRadius="8dp"
+            tools:progress="0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/criteriaTxtLength"
+                style="@style/PwdCriteriaTxtStyle"
+                android:text="@string/pwd_criteria_length" />
+
+            <TextView
+                android:id="@+id/criteriaTxtUppercase"
+                style="@style/PwdCriteriaTxtStyle"
+                android:text="@string/pwd_criteria_uppercase" />
+
+            <TextView
+                android:id="@+id/criteriaTxtLowercase"
+                style="@style/PwdCriteriaTxtStyle"
+                android:text="@string/pwd_criteria_lowercase" />
+
+            <TextView
+                android:id="@+id/criteriaTxtNumber"
+                style="@style/PwdCriteriaTxtStyle"
+                android:text="@string/pwd_criteria_number" />
+
+            <TextView
+                android:id="@+id/criteriaTxtSpecialChars"
+                style="@style/PwdCriteriaTxtStyle"
+                android:text="@string/pwd_criteria_special_chars" />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm_new_pwd"
+            android:textColorHint="@color/Text"
+            android:layout_marginBottom="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/Pwd">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxt_pwd_rep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:minWidth="400dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/Text"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_confirm_pwd_change"
+            style="@style/SelectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/Background"
+            android:text="@string/change_pwd"
+            android:textColor="@color/Text"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

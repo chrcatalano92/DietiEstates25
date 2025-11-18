@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <include layout="@layout/horizontal_line" />
+
+                <TextView
+                    android:gravity="center"
+                    android:text="@string/state"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/det_classifyProperty"
+                    android:gravity="center" />
+
+                <include layout="@layout/horizontal_line" />
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/det_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:scaleType="center"
+                android:src="@drawable/no_img"
+                tools:ignore="ContentDescription" />
+
+            <TableLayout
+                android:id="@+id/tableDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <include layout="@layout/horizontal_line" />
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/desc"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/full_descriptionBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/Background"
+                        android:drawableEnd="@drawable/ForwardIOS"
+                        android:text="@string/show_all_btn"
+                        android:textColor="@color/Text" />
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/det_description"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2" />
+
+                <include layout="@layout/horizontal_line" />
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center"
+                    android:text="@string/characts"
+                    android:textStyle="bold" />
+
+                <TableRow>
+                    <TextView
+                        android:text="@string/price"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/det_price"
+                        android:layout_marginStart="@dimen/margin_start" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="@string/dimensions"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/det_dimensions"
+                        android:layout_marginStart="@dimen/margin_start" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="@string/rooms"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/det_rooms"
+                        android:layout_marginStart="@dimen/margin_start" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="@string/level"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/det_level"
+                        android:layout_marginStart="@dimen/margin_start" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="@string/elevator_lift"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/det_elevator"
+                        android:layout_marginStart="@dimen/margin_start" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="@string/energy_class"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/det_energyClass"
+                        android:layout_marginStart="@dimen/margin_start" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="@string/services"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/det_services"
+                        android:layout_width="251dp"
+                        android:maxLines="4"
+                        android:layout_marginStart="@dimen/margin_start" />
+                </TableRow>
+
+                <include layout="@layout/horizontal_line" />
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:scrollbars="horizontal">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"
+                        app:singleLine="true" />
+                </HorizontalScrollView>
+
+                <include layout="@layout/horizontal_line" />
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center"
+                    android:text="@string/address"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/det_address"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="2" />
+
+                <include layout="@layout/horizontal_line" />
+            </TableLayout>
+
+            <ImageButton
+                android:id="@+id/map"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_start"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/Background"
+                android:importantForAccessibility="no"
+                android:scaleType="centerCrop"
+                android:src="@drawable/Map" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

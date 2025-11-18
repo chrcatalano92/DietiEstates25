@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/offline_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/offline_indicator"
+            android:background="@drawable/OfflineIndicator"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/client_img_tracked"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/Person"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/client_firstname_surname_tracked"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textAppearance="?attr/textAppearanceTitleSmall"
+            android:textStyle="bold"
+            tools:text="Nome Cognome"
+            app:layout_constraintEnd_toStartOf="@id/offline_indicator"
+            app:layout_constraintStart_toEndOf="@id/client_img_tracked"
+            app:layout_constraintTop_toTopOf="@id/client_img_tracked" />
+
+        <TextView
+            android:id="@+id/client_id_label_tracked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="?android:attr/textColorSecondary"
+            android:text="@string/client_id_label"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/client_firstname_surname_tracked"
+            app:layout_constraintTop_toBottomOf="@id/client_firstname_surname_tracked" />
+
+        <TextView
+            android:id="@+id/client_id_tracked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            android:textColor="?android:attr/textColorSecondary"
+            tools:text="33"
+            app:layout_constraintBaseline_toBaselineOf="@+id/client_id_label_tracked"
+            app:layout_constraintStart_toEndOf="@+id/client_id_label_tracked" />
+
+        <View
+            android:id="@+id/divider_line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="?attr/colorOutlineVariant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/client_id_tracked" />
+
+        <TextView
+            android:id="@+id/property_id_label_tracked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_property_id"
+            android:textStyle="bold"
+            android:textAppearance="?attr/textAppearanceLabelLarge"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider_line" />
+
+        <TextView
+            android:id="@+id/property_id_tracked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="PROP-1025"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/property_id_label_tracked"
+            app:layout_constraintBaseline_toBaselineOf="@id/property_id_label_tracked" />
+
+        <TextView
+            android:id="@+id/action_date_time_label_tracked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_action_date_time"
+            android:textStyle="bold"
+            android:textAppearance="?attr/textAppearanceLabelLarge"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/property_id_label_tracked" />
+
+        <TextView
+            android:id="@+id/action_date_time_tracked"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            tools:text="26/05/2025 - 11:43"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/action_date_time_label_tracked"
+            app:layout_constraintBaseline_toBaselineOf="@id/action_date_time_label_tracked"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/offer_price_label_tracked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_offer_price"
+            android:textAppearance="?attr/textAppearanceLabelLarge"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/action_date_time_label_tracked" />
+
+        <TextView
+            android:id="@+id/offer_price_tracked"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="italic"
+            tools:text="€ 250.000,00"
+            app:layout_constraintBaseline_toBaselineOf="@+id/offer_price_label_tracked"
+            app:layout_constraintStart_toEndOf="@+id/offer_price_label_tracked" />
+
+        <View
+            android:id="@+id/divider_after_offer_price_info"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="132dp"
+            android:background="?attr/dividerHorizontal"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/client_id_tracked" />
+
+        <TextView
+            android:id="@+id/offer_status_label_tracked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_final_status"
+            android:textStyle="bold"
+            android:textAppearance="?attr/textAppearanceLabelMedium"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_after_offer_price_info" />
+
+        <TextView
+            android:id="@+id/offers_status_tracked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Accettata"
+            android:textStyle="bold"
+            android:textAppearance="?attr/textAppearanceBodyLarge"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/offer_status_label_tracked"
+            app:layout_constraintBaseline_toBaselineOf="@+id/offer_status_label_tracked" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

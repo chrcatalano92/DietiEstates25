@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/BackgroundCounterOfferCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="18dp">
+
+        <TextView
+            android:id="@+id/property_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:textAlignment="center"
+            android:maxLines="2"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Villa con vista mare" />
+
+        <ImageView
+            android:id="@+id/property_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/property_img_desc"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/property_title"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/offer_amount_label"
+            style="@style/DetailLabelStyle"
+            android:layout_marginTop="8dp"
+            android:text="@string/your_offer_label"
+            android:textColor="@color/Text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/property_img"
+            app:layout_constraintTop_toTopOf="@id/property_img" />
+
+        <TextView
+            android:id="@+id/offer_amount_value"
+            style="@style/DetailValueStyle"
+            android:textColor="@color/Text"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/offer_amount_label"
+            app:layout_constraintTop_toBottomOf="@id/offer_amount_label"
+            tools:text="€ 250.000,00" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/property_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/respond_selection"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/BackgroundCounterOfferSection"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/counteroffer_amount_label"
+                style="@style/DetailLabelStyle"
+                android:text="@string/agent_counteroffer_label" />
+
+            <TextView
+                android:id="@+id/counteroffer_amount_value"
+                style="@style/DetailValueStyle"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                android:textColor="?attr/colorError"
+                android:textStyle="bold"
+                tools:text="€ 240.000,00" />
+
+            <TextView
+                android:id="@+id/respond_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:minWidth="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="end"
+                android:gravity="center_vertical|end"
+                android:text="@string/btn_send_response"
+                android:textColor="?attr/colorPrimary"
+                android:textAppearance="?attr/textAppearanceLabelLarge"
+                android:textStyle="bold"
+                android:drawablePadding="8dp"
+                app:drawableEndCompat="@drawable/baseline_arrow_forward_ios_24"
+                app:drawableTint="?attr/colorPrimary" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

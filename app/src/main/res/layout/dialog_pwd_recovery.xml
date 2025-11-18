@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialogPwdRecoveryConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutDialog"
+        android:paddingBottom="10dp"
+        android:background="@drawable/custom_rectangle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialogTitle"
+            android:text="@string/pwdRecovery"
+            android:textColor="@color/Text"
+            android:textSize="@dimen/text_title"
+            android:paddingTop="70dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/layoutDialog" />
+
+        <LinearLayout
+            android:id="@+id/offerInputLayoutContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/BackgroundCardView"
+            app:layout_constraintBottom_toTopOf="@id/btn_new_pwd_send"
+            app:layout_constraintTop_toBottomOf="@id/dialogTitle">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInLEmailDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_pwd_dialog"
+                android:textColorHint="@color/Text"
+                app:startIconDrawable="@drawable/Email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dialogInputEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="400dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/Text"
+                    android:textColorHighlight="@color/Text"
+                    android:textColorHint="@color/Text"
+                    android:textSize="@dimen/text_size"
+                    android:gravity="center"
+                    android:layout_marginBottom="6dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_new_pwd_send"
+            style="?attr/materialButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="@color/Background1.2"
+            android:text="@string/btnSend"
+            android:textColor="@color/Text"
+            android:textSize="@dimen/btn_text_size"
+            app:cornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/offerInputLayoutContainer" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dialogClose"
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/transparent_20pct_white"
+            android:padding="10dp"
+            android:translationZ="12dp"
+            android:elevation="12dp"
+            app:icon="@drawable/Close"
+            app:iconSize="28dp"
+            app:iconTint="@color/Text"
+            app:strokeColor="@color/white_50pct"
+            app:rippleColor="@color/primary_20pct"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+            app:layout_constraintBottom_toBottomOf="@+id/dialogTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.96"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.34"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imgDialog"
+        android:importantForAccessibility="no"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:src="@drawable/PasswordRecovery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/layoutDialog"
+        app:layout_constraintBottom_toTopOf="@id/layoutDialog" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#616161</color>
+    <color name="gray_light">#e8e8e8</color>
+    <color name="gray_light2">#80B3C3D1</color>
+    <color name="blue">#1073d6</color>
+    <color name="blue2">#0D519B</color>
+    <color name="blue2.2">#0B407E</color>
+    <color name="azure">#5DA4E2</color>
+    <color name="light_mode">#FFFBFE</color>
+    <color name="dark_mode">#1D1B20</color>
+
+    <color name="badge_notifier">#FF0000</color>
+    <color name="badge_stroke">@color/white</color>
+
+    <color name="transparent_20pct_white">#33FFFFFF</color>
+    <color name="white_50pct">#80FFFFFF</color>
+    <color name="primary_20pct">#331073d6</color>
+
+    <color name="orange_pending">#FF9800</color>
+    <color name="orange_pending_3">#D09E59</color>
+
+    <color name="green_accepted">#1B5E20</color>
+    <color name="green_accepted2">#1C9200</color>
+    <color name="red_rejected">#B71C1C</color>
+    <color name="red_rejected2">#9E0000</color>
+    <color name="blue_counteroffer">#2196F3</color>
+    <color name="orange_make_new_offer">#A35600</color>
+
+    <color name="pwd_strength_default">#7FBDBDBD</color>
+    <color name="pwd_strength_terrible">#F44336</color>
+    <color name="pwd_strength_weak">#FF9800</color>
+    <color name="pwd_strength_fair">#FFEB3B</color>
+    <color name="pwd_strength_good">#94A913</color>
+    <color name="pwd_strength_strong">#36AB11</color>
+    <color name="pwd_strength_excellent">#105F0D</color>
+</resources>

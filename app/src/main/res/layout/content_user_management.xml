@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundBasicActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_manage_managers"
+        style="@style/UserManagementCategoryCard"
+        app:cardBackgroundColor="@color/Background">
+
+        <LinearLayout
+            style="@style/UserManagementCategoryCardLinearLayout">
+            <ImageView
+                style="@style/UserManagementCategoryCategoryIcon"
+                app:srcCompat="@drawable/Managers"
+                android:contentDescription="@string/manage_agency_managers" />
+            <TextView
+                style="@style/UserManagementCategoryTitle"
+                android:text="@string/manage_agency_managers" />
+            <ImageView
+                style="@style/UserManagementCategoryChevron"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ForwardIOS" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_manage_agents"
+        style="@style/UserManagementCategoryCard"
+        app:cardBackgroundColor="@color/Background">
+
+        <LinearLayout
+            style="@style/UserManagementCategoryCardLinearLayout">
+            <ImageView
+                style="@style/UserManagementCategoryCategoryIcon"
+                app:srcCompat="@drawable/Agents"
+                android:contentDescription="@string/manage_real_estate_agents" />
+            <TextView
+                style="@style/UserManagementCategoryTitle"
+                android:text="@string/manage_real_estate_agents" />
+            <ImageView
+                style="@style/UserManagementCategoryChevron"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ForwardIOS" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_manage_clients"
+        style="@style/UserManagementCategoryCard"
+        app:cardBackgroundColor="@color/Background">
+
+        <LinearLayout
+            style="@style/UserManagementCategoryCardLinearLayout">
+            <ImageView
+                style="@style/UserManagementCategoryCategoryIcon"
+                app:srcCompat="@drawable/UsersGroup"
+                android:contentDescription="@string/manage_clients" />
+            <TextView
+                style="@style/UserManagementCategoryTitle"
+                android:text="@string/manage_clients" />
+            <ImageView
+                style="@style/UserManagementCategoryChevron"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ForwardIOS" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

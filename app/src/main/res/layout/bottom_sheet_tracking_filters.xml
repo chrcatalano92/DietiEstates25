@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@color/Background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/filters_title"
+        android:textStyle="bold"
+        android:textAppearance="?attr/textAppearanceTitleLarge"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filter_sort_by_label"
+        android:textStyle="italic"
+        android:textAppearance="?attr/textAppearanceLabelLarge"
+        android:layout_marginBottom="4dp" />
+
+    <RadioGroup
+        android:id="@+id/sort_options_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="320dp"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/sort_by_client_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_sort_by_client_id" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/sort_by_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_sort_by_name" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/sort_by_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_sort_by_surname" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/sort_by_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/filter_sort_by_date" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filter_sort_direction_label"
+        android:textAppearance="?attr/textAppearanceLabelLarge"
+        android:layout_marginBottom="4dp" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/sort_direction_toggle_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="400dp"
+        android:layout_marginBottom="24dp"
+        app:singleSelection="true"
+        app:selectionRequired="true">
+
+        <Button
+            android:id="@+id/sort_asc"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ascending_sort_indicator" />
+
+        <Button
+            android:id="@+id/sort_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?attr/materialButtonOutlinedStyle"
+            android:text="@string/descending_sort_indicator" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <Button
+        android:id="@+id/apply_filters_button"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minWidth="300dp"
+        android:contentDescription="@string/tracking"
+        android:text="@string/filters_apply_btn_txt" />
+</LinearLayout>
